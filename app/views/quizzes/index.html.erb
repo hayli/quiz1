@@ -1,39 +1,12 @@
+<!DOCTYPE html>
 <html>
-
 	<head>
 
-		<style>
-			body {
-				background: url('strawberryMuseli.jpg')no-repeat center center fixed; 
-				-webkit-background-size: cover;
-				-moz-background-size: cover;
-				-o-background-size: cover;
-				background-size: cover;
-			}
-
-			h1 {
-				color: white;
-				font-family: 'Helvetica Neue', Helvetica;
-				font-weight: 100;
-				font-size: 60px;
-				margin: 0px;
-			}
-
-			p {
-				color: white;
-				font-family: 'Helvetica Neue', Helvetica;
-				font-weight: 105;
-				font-size: 16px;
-			}
-
-			.box {
-				background-color: rgba(231, 76, 60, 1.0); 
-				padding: 50px 30px 30px;
-				width: 350px;
-				margin: 100px auto;
-				text-align: center;
-			}
-		</style>
+		<title>What to eat</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+		<%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+		<%= csrf_meta_tags %>
 
 	</head>
 
@@ -71,9 +44,9 @@
 			<br />
 
 
-			<a href="http://www.myrecipes.com/recipe/strawberry-lemonade-muffins">
+			<p class="recipe-link"><a href="http://www.myrecipes.com/recipe/strawberry-lemonade-muffins">
 			Check out the original recipe here -->
-			</a>
+			</a></p>
 
 		</div>
 
