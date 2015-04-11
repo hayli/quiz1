@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20150409204944) do
   enable_extension "plpgsql"
 
   create_table "recipes", force: true do |t|
+    t.string   "image"
     t.string   "name"
     t.text     "ingredients",  default: [], array: true
     t.text     "preparations", default: [], array: true

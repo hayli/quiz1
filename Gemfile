@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# Include Paperclip gem
+gem "paperclip", "~> 4.2"
+
 # Include twitter bootstrap-sass for responsive design
 gem 'bootstrap-sass', '~> 3.3.4'
 
