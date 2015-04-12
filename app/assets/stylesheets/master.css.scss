@@ -1,14 +1,57 @@
-body {
-	background: no-repeat center center fixed; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+@import url(https://fonts.googleapis.com/css?family=Abril+Fatface);
+
+.navbar {
+  font-family: 'Abril Fatface', cursive;
+  height: 80px;
+}
+
+.logo:hover {
+  text-decoration: none;
+}
+
+.circle {
+    position: relative;
+    border-radius: 100%;
+    background: #f84342;
+    border: 1px solid #F7F7F7;
+    width: 80px;
+    height: 80px;
+    margin: 10px 10px;
+    text-align: center;
+    color: #FFF;
+    font-size: 16px;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    line-height: 16px;
+    cursor: pointer;
+    transform:rotate(11deg);
+    -ms-transform:rotate(11deg); /* IE 9 */
+    -webkit-transform:rotate(11deg); /* Opera, Chrome, and Safari */
+}
+    
+.links {
+  text-align: right;
+  padding: 25px 50px;
+}
+
+a {
+  color: white;
+  font-size: 25px;
+  padding-right: 25px;
+}
+
+/* mouse over link */
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+      color: #e74c3c;
 }
 
 h1 {
-	color: white;
-	font-family: 'Helvetica Neue', Helvetica;
 	font-weight: 100;
 	font-size: 60px;
 	margin: 0px;
@@ -16,47 +59,45 @@ h1 {
 }
 
 h3 {
-	color: white;
-	font-family: 'Helvetica Neue', Helvetica;
 	font-weight: 105;
 	font-size: 25px;
 	text-align: center;
 }
 
 p {
-	font-family: 'Helvetica Neue', Helvetica;
 	font-weight: 105;
 	font-size: 20px;
 	text-align: center;
 }
 
 .text {
-	color: white;
-	font-family: 'Helvetica Neue', Helvetica;
 	font-weight: 100;
 	font-size: 16px;
 	text-align: left;
 }
 
 .box {
+  color: white;
+	font-family: 'Helvetica Neue', Helvetica;
 	background-color: #e74c3c; 
 	padding: 50px 30px 30px;
 	width: 550px;
 	margin: 100px auto;
 }
 
-.recipe-link a {
+.quiz-link a {
 	color: #bdc3c7;
+  font-family: 'Abril Fatface', cursive;
+  font-size: 20px;
 }
 
 /* mouse over link */
-.recipe-link a:hover {
+.quiz-link a:hover {
     text-decoration: underline;
 }
 
 /* selected link */
-.recipe-link a:active {
+.quiz-link a:active {
     color: #f1c40f;
 }
 
-		

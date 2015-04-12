@@ -1,0 +1,10 @@
+<h1>Add New Recipe</h1>
+<%= simple_form_for @quiz, :html => { :multipart => true }  do |form| %>
+  <%= form.input :photo, as: :file %>
+  <%= form.input :name %>
+  <%= form.input :ingredients %>
+  <%= form.input :preparations %>
+  <%= form.input :link, required: false %>
+  <br />
+  <%= form.submit 'Create', :class => 'btn btn-danger' %>
+<% end %>

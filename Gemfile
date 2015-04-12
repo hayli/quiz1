@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+# Include Simple form
+gem 'simple_form'
+
 # Include Paperclip gem
 gem "paperclip", "~> 4.2"
 
