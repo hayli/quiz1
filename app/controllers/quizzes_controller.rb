@@ -10,7 +10,7 @@ class QuizzesController < ApplicationController
   def create
     @quiz = Quiz.create(quiz_params)
     if @quiz.invalid?
-      flash[:error] = '<strong>Could not save</strong> the data you entered is invalid.'
+      flash[:error] = '<strong>Could not save,</strong> the data you entered is invalid.'
     end
     redirect_to root_path
   end

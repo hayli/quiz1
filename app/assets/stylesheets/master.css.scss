@@ -10,33 +10,36 @@
 }
 
 .circle {
-    position: relative;
-    border-radius: 100%;
-    background: #f84342;
-    border: 1px solid #F7F7F7;
-    width: 80px;
-    height: 80px;
-    margin: 10px 10px;
-    text-align: center;
-    color: #FFF;
-    font-size: 16px;
-    font-style: italic;
-    letter-spacing: 1.5px;
-    line-height: 16px;
-    cursor: pointer;
-    transform:rotate(11deg);
-    -ms-transform:rotate(11deg); /* IE 9 */
-    -webkit-transform:rotate(11deg); /* Opera, Chrome, and Safari */
+  position: relative;
+  border-radius: 100%;
+  background: #f84342;
+  width: 80px;
+  height: 80px;
+  margin: 10px 10px;
+  text-align: center;
+  color: #FFF;
+  font-size: 16px;
+  font-style: italic;
+  letter-spacing: 1.5px;
+  line-height: 16px;
+  cursor: pointer;
+  transform:rotate(11deg);
+  -ms-transform:rotate(11deg); /* IE 9 */
+  -webkit-transform:rotate(11deg); /* Opera, Chrome, and Safari */
+}
+
+.clear {
+  clear:both;
 }
     
 .links {
   text-align: right;
   padding: 25px 50px;
+  font-size: 25px;
 }
 
 a {
   color: white;
-  font-size: 25px;
   padding-right: 25px;
 }
 
@@ -101,3 +104,11 @@ p {
     color: #f1c40f;
 }
 
+.new-recipe {
+  color: white;
+}
+
+.simple_form label{
+  font-weight: 600;
+  font-size: 12px;
+}

@@ -1,10 +1,15 @@
-<h1>Add New Recipe</h1>
-<%= simple_form_for @quiz, :html => { :multipart => true }  do |form| %>
-  <%= form.input :photo, as: :file %>
-  <%= form.input :name %>
-  <%= form.input :ingredients %>
-  <%= form.input :preparations %>
-  <%= form.input :link, required: false %>
-  <br />
-  <%= form.submit 'Create', :class => 'btn btn-danger' %>
-<% end %>
+<div class="new-recipe">
+  <br \>
+  <h1>Add New Recipe</h1>
+  <%= simple_form_for Quiz.new, :html => { :multipart => true }  do |form| %>
+    <%= form.input :photo, as: :file, :label => "Choose your background image." %>
+    <%= form.input :name, :label => "What is the recipe called?" %>
+    <%= form.input :ingredients, :label => "What ingredients do we need?"%>
+    <%= form.input :preparations, :label => "How do we make it?" %>
+    <%= form.input :link, required: false, :label => "Include a link to the original recipe." %>
+    <br \>
+    <%= form.submit 'Create', :class => 'btn btn-danger' %>
+  <% end %>
+  <br \>
+  <br \>
+</div>

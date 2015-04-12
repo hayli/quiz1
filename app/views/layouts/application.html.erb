@@ -27,11 +27,14 @@
 		  </div>
 		  
 		  <div class="col-xs-7 links">
-		    <%= link_to 'add', new_quiz_path %>
+		  	<!-- Button trigger modal -->
+		    <%= link_to 'add', new_quiz_path %>	
 		    <%= link_to 'something else', root_path, :class => 'next-quiz' %>
 		  </div>
 
 		</header>
+
+		<br class="clear" />
 
 		<div class="container">
 			<% if flash[:error].present? %>
@@ -42,6 +45,11 @@
 			<%= yield %>
 		</div>
 
-	</body>
+		<div class="footer">
+	    <div class="container made-by">
+	      made with love by<a href="http://hellohayli.com"> hayli</a>
+	    </div>
+  	</div>
 
+	</body>
 </html>
